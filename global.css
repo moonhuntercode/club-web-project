@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #cdbbff;
+}
+body{
+  display: grid;
+  grid-template-columns:130px 1fr;
+  
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+}
+.sidebarLefContainer {
+  position: relative;
+  justify-self: self-start;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
+  grid-column-start: 1;
+  /* max-width: 130px; */
+  height: 100%;
+  background-color: blueviolet;
+  display: grid;
+  /* grid-template-columns: 1fr 30px; */
+  grid-template: 100px 100px 100px 100px /110px 40px;
+  
+  /* grid-auto-flow: row; */
+}
+.childrenSidebarLef svg{
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  cursor: pointer;
+}
+#main{
+  /* width: 100%; */
+  /* grid-area: 6/2/6/2; */
+  /* margin-left: 100px; */
+  justify-self: center;
+  align-self: center;
+  position: fixed;
+  bottom: -70px;
+  margin-left: 200px;
+}
+#main img{
+  width: 800px;
+  
+}

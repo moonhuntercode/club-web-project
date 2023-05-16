@@ -9,10 +9,10 @@ html {
   height: 100%;
   background-color: #cdbbff;
 }
-body{
+body {
   display: grid;
-  grid-template-columns:130px 1fr;
-  
+  grid-template-columns: 130px 1fr;
+
   grid-auto-flow: column;
   grid-auto-columns: auto;
 }
@@ -27,17 +27,25 @@ body{
   background-color: blueviolet;
   display: grid;
   /* grid-template-columns: 1fr 30px; */
-  grid-template: 100px 100px 100px 100px /110px 40px;
-  
+  grid-template: 100px 100px 100px 100px /90px 40px;
+
   /* grid-auto-flow: row; */
+  transition: all 1s;
 }
-.childrenSidebarLef svg{
+.girar_to_right {
+  transform: rotate(180deg);
+}
+.left svg {
   width: 100px;
   height: 150px;
   margin: 10px;
   cursor: pointer;
 }
-#main{
+.right svg {
+  width: 30px;
+  margin: 10px;
+}
+#main {
   /* width: 100%; */
   /* grid-area: 6/2/6/2; */
   /* margin-left: 100px; */
@@ -47,7 +55,6 @@ body{
   bottom: -70px;
   margin-left: 200px;
 }
-#main img{
+#main img {
   width: 800px;
-  
 }

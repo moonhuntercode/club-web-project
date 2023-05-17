@@ -27,7 +27,7 @@ body {
   background-color: blueviolet;
   display: grid;
   /* grid-template-columns: 1fr 30px; */
-  grid-template: 100px 100px 100px 100px /90px 40px;
+  grid-template: 100px 100px 100px 100px /12vw 40px;
 
   /* grid-auto-flow: row; */
   transition: all 1s;
@@ -36,24 +36,30 @@ body {
   transform: rotate(180deg);
 }
 .left svg {
-  width: 100px;
+  width: 70px;
   height: 150px;
   margin: 10px;
   cursor: pointer;
 }
 .right svg {
+  cursor: pointer;
+
   width: 30px;
   margin: 10px;
 }
-#main {
+.main {
+  background-image: url("./team-cyberpunk-girl-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
   /* width: 100%; */
   /* grid-area: 6/2/6/2; */
   /* margin-left: 100px; */
-  justify-self: center;
-  align-self: center;
-  position: fixed;
+  /* justify-self: center;
+  align-self: center; */
+  /* position: fixed;
   bottom: -70px;
-  margin-left: 200px;
+  margin-left: 200px; */
 }
 #main img {
   width: 800px;

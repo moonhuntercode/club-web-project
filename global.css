@@ -38,7 +38,7 @@ body {
 .left svg {
   width: 70px;
   height: 150px;
-  margin: 10px;
+  /* margin: 10px; */
   cursor: pointer;
 }
 .right svg {
@@ -63,4 +63,17 @@ body {
 }
 #main img {
   width: 800px;
+}
+.childrenSidebarLef {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: start space-between;
+}
+.childrenSidebarLef .name_of_section {
+  text-align: center;
+  align-self: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "hacked";
+  font-size: 4vw;
 }

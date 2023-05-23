@@ -68,6 +68,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   place-content: start space-between;
+  cursor: pointer;
 }
 .childrenSidebarLef .name_of_section {
   text-align: center;
@@ -76,4 +77,10 @@ body {
   color: white;
   font-family: "hacked";
   font-size: 4vw;
+}
+.oculto {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
 }

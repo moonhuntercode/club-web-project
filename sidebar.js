@@ -31,7 +31,7 @@ iconoPaExpandir.addEventListener("click", () => {
     }, 500);
     iconoPaExpandir.classList.add("girar_to_right");
     sidebarContainer.style.gridTemplate =
-      "100px 100px 100px 100px /50vw 40px";
+      "100px 100px 100px 100px /50vw";
 
     setTimeout(() => {
       desaparecerName.innerHTML = NAME_OF_GROUP;
@@ -49,7 +49,7 @@ iconoPaExpandir.addEventListener("click", () => {
     // desaparecerName.style.visibility = "hidden";
     desaparecerName.innerHTML = " ";
     sidebarContainer.style.gridTemplate =
-      "100px 100px 100px 100px /12vw 40px";
+      "100px 100px 100px 100px /12vw";
   }
 });
 function createSpan1() {

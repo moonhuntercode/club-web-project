@@ -27,7 +27,7 @@ body {
   background-color: blueviolet;
   display: grid;
   /* grid-template-columns: 1fr 30px; */
-  grid-template: 100px 100px 100px 100px /12vw 40px;
+  grid-template: 100px 100px 100px 100px /12vw;
 
   /* grid-auto-flow: row; */
   transition: all 1s;
@@ -41,12 +41,13 @@ body {
   /* margin: 10px; */
   cursor: pointer;
 }
-.right svg {
+/* .right svg {
   cursor: pointer;
-
+borrado porque decidi mover
+a primero la flecha en sidebar
   width: 30px;
   margin: 10px;
-}
+} */
 .main {
   background-image: url("./team-cyberpunk-girl-1.png");
   background-repeat: no-repeat;

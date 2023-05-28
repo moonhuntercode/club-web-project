@@ -28,7 +28,8 @@ iconoPaExpandir.addEventListener("click", () => {
       createSpan2();
       createSpan3();
       createSpan4();
-    }, 500);
+      createSpan5();
+    }, 400);
     iconoPaExpandir.classList.add("girar_to_right");
     sidebarContainer.style.gridTemplate =
       "100px 100px 100px 100px /50vw";
@@ -55,7 +56,7 @@ iconoPaExpandir.addEventListener("click", () => {
 function createSpan1() {
   const span1 = document.createElement("span");
   span1.className = "name_of_section";
-  span1.innerHTML = "our groups";
+  span1.innerHTML = "";
   let sectionElegida = document.querySelectorAll(
     ".childrenSidebarLef"
   )[0];
@@ -92,6 +93,17 @@ function createSpan4() {
   let sectionElegida = document.querySelectorAll(
     ".childrenSidebarLef"
   )[3];
+  sectionElegida.appendChild(span);
+  // test of section
+  // console.log(sectionElegida);
+}
+function createSpan5() {
+  const span = document.createElement("span");
+  span.className = "name_of_section";
+  span.innerHTML = "our events";
+  let sectionElegida = document.querySelectorAll(
+    ".childrenSidebarLef"
+  )[4];
   sectionElegida.appendChild(span);
   // test of section
   // console.log(sectionElegida);

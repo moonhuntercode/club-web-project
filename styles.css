@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body,
 html {
   width: 100%;
@@ -11,7 +12,7 @@ html {
 }
 body {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 12vw 1fr;
 
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -19,8 +20,9 @@ body {
 .sidebarLefContainer {
   position: relative;
   justify-self: self-start;
+
   /* overflow: scroll; */
-  /* overflow-x: hidden; */
+  overflow-x: scroll;
   grid-column-start: 1;
   /* max-width: 130px; */
   height: 100%;
@@ -35,6 +37,7 @@ body {
 .girar_to_right {
   transform: rotate(180deg);
 }
+
 .left svg {
   width: 70px;
   height: 150px;
@@ -78,6 +81,9 @@ a primero la flecha en sidebar
   color: white;
   font-family: "hacked";
   font-size: 4vw;
+}
+.childrenSidebarLef:hover {
+  background-color: rgba(255, 255, 255, 0.45);
 }
 .oculto {
   visibility: hidden;
